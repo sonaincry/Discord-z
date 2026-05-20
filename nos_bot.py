@@ -72,15 +72,26 @@ FFMPEG_LIVE_OPTIONS = {
 # ======================================
 
 YDL_OPTIONS = {
-    'format': 'bestaudio',
-    'noplaylist': True
+    'format': 'bestaudio/best',
+    'noplaylist': True,
+    'quiet': True,
+    'extractor_args': {
+        'youtube': {
+            'player_client': ['android']
+        }
+    }
 }
 
 YDL_SEARCH_OPTIONS = {
-    'format': 'bestaudio',
+    'format': 'bestaudio/best',
     'noplaylist': True,
     'default_search': 'ytsearch',
     'quiet': True,
+    'extractor_args': {
+        'youtube': {
+            'player_client': ['android']
+        }
+    }
 }
 
 YDL_LIVE_OPTIONS = {
