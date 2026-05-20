@@ -1,0 +1,1 @@
+worker: python nos_bot.py
